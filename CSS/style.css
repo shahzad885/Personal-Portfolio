@@ -1,0 +1,324 @@
+
+.body{
+   font-family: "Ubuntu";
+   
+}
+
+.index{
+
+    margin:88px 40px 88px 40px;
+   
+    
+}
+.all-page{
+    margin: 0;
+   
+}
+.header{
+    padding: 2% 2% 85px 2%;
+}
+#navbar-items{
+    margin-right: 26px;
+}
+.navbar-brand{
+    font-family: "Ubuntu" ;
+    font-size: 28px;
+    font-weight: 900px;
+    margin-top: 1px;
+}
+    
+/* side bar */
+
+#sidebar{
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 22px;
+}
+    
+   
+
+.shahzad-image{
+    width: 85%;
+   
+    padding: 22px;
+    border-radius: 36px;
+    
+}
+
+.name{
+    text-decoration: none !important;
+    color: black;
+    font-family: "Ubuntu";
+   
+}
+
+
+
+.bio{
+    background-color: #f3f6f6;
+    padding: 8px 0px 8px 0px;
+    margin: 15px 80px 15px 80px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    color: black;
+    font-family: "Ubuntu";
+
+}
+
+
+
+.bio-icons{
+    font-size: 20px;
+    background-color: #f3f6f6;
+    padding: 3px 9px;
+    border-radius: 4px;
+    margin: 8px ;
+}
+
+.bio-icons:hover{
+    color: white;
+    background-color:rgb(85, 168, 85);
+
+}
+
+.complete-info{
+    background-color: #f3f6f6;
+    border-radius: 19px;
+    margin-top: 75px;
+}
+
+.personal-info{
+    /* display: inline-block;
+    background-color: #f3f6f6;
+    margin-top: 42px;
+    border-radius: 13px; */
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #f3f6f6;
+    margin-top: -21px;
+    border-radius: 19px;
+}
+.personal-info-icon{
+    background-color: white;
+    box-shadow: 2px 2px lightgray;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 13px;
+    margin: 27px;
+    text-align: center;
+}
+
+
+
+.personal-info-icon:hover{
+    color: white;
+    background-color:rgb(85, 168, 85);
+
+}
+
+.phone{
+    text-align: justify;
+    margin: 15px;
+    padding-left: 8px;
+    margin-left: 0;
+    margin-top: 28px;
+}
+
+.info,info-headings{
+    font-size: 12px;
+
+}
+
+.Download-btn{
+    background-color:#0d6efd ;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 24px;
+    line-height: 20px;
+    padding: 18px 30px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.Download-btn:hover{
+    background-color:#f3f6f6;
+    border: 1px solid #000000;
+    color: #000000;
+
+}
+
+
+                                                     /* main page */
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+                                                    
+#main-page{
+   
+    background-color: white;
+    padding: 1px 1px 1px 1px;
+    border-radius: 22px;
+    height: 80%;
+    
+}
+
+.About{
+    margin: 35px;
+}
+
+.About.h1{
+    font-size: 40px;
+}
+.About-heading{
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    color: #44566c;
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+
+                              /* what i do */
+
+.what-i-do{
+    margin: 32px;
+    text-align: left;
+
+}
+.what-i-do-heading{
+    font-size: 25px;
+
+  }
+
+.four-skills{
+    margin-top: 26px
+
+}
+
+
+.what-i-do-icon{
+    width: 47px;
+    height: 40px;
+    margin: 5px 5px 4px 11px;
+    padding: 0px;
+    display: flex;
+    
+}
+
+.web-dev-desc{
+    padding: 14px 1px 1px 14px;
+
+}
+.what-i-do-1{
+    background-color: #fff4f4;
+    padding: 0px;
+    border-radius: 15px;
+    margin: 18px;
+    
+}
+.footer{
+    text-align: center;
+}
+
+/*------------------------------------------ Resume-------------------------------------------- */
+
+.resume{
+    margin: 40px;
+}
+.education{
+    margin: 17px 0px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: normal;
+   
+}
+.education-image{
+    width: 5%;
+    padding: 0px;
+    
+   
+}
+
+.BS,.FSC,.matric{
+    text-align: center;
+    background-color: #fff4f4;
+    padding: 14px;
+    margin:37px 49px 37px 42px;
+    width: 80%;
+    border-radius: 31px;
+}
+
+/* ------------------------------------------------------------skills and knowledge ---------- -------------------------------*/
+.skils-knowledge{
+    background-color:  #eef5fa;
+    height: 70%;
+}
+
+.skills{
+    margin: 55px 34px;
+}
+.frontend{
+    display: flex;
+    justify-content: space-between;
+}
+.progress{
+  
+    background-color:  #eef5fa;;
+   
+   
+    
+}
+
+.skill1,.skill2,.skill3{
+    background-color: #e6efef;
+    padding: 0px ;
+    color: aqua !important;
+}
+.bg-danger{
+    background-color: #ae21b8 !important;
+}
+
+.bg-success {
+    background-color: #e933c7 !important;
+}
+
+/* knowledge */
+
+.knowledge{
+    margin: 55px;
+    padding: 0px;
+}
+.knowledge-heading{
+    padding: 1px;
+    margin-bottom: 27px;
+    margin-left: -6px;
+}
+.knowledge-desc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -26px;
+}
+.knowledge-p{
+    background-color: #2196f31c;
+    margin: 15px 18px;
+    padding: 5px;
+    border-radius: 6px;
+}
