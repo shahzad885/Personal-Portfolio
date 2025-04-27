@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Shahzad Ahmad</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background-color: #eef5fa;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .flutter-badge {
+            background-color: #47c5fb;
+            color: white;
+        }
+
+        .react-badge {
+            background-color: #61dafb;
+            color: #333;
+        }
+
+        .node-badge {
+            background-color: #8cc84b;
+            color: white;
+        }
+
+        .firebase-badge {
+            background-color: #ffca28;
+            color: #333;
+        }
+
+        .mongo-badge {
+            background-color: #4db33d;
+            color: white;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .project-link {
+            color: #ff3838;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .project-link:hover {
+            color: #d32f2f;
+        }
+
+        .projects-section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .projects-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background-color: #ff3838;
+        }
+
+        .category-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 15px 20px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(images/bk-image.jpg);">
+
+    <section class="index">
+
+        <!-- navbar-section -->
+        <nav class="navbar navbar-expand-lg navbar-light header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">Shahzad.</a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Skill&eduction.html">Skills $ education</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/MyProjects.html">My projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- side bar and main page -->
+        <section class="all-page">
+            <div class="row">
+
+                <!-- side bar -->
+                <div id="sidebar" class="col-lg-3">
+                    <div>
+                        <img class="shahzad-image" src="images/shahzad.JPG" alt="">
+                    </div>
+
+                    <div>
+                        <h4>
+                            <a class="name nav-item" href="">Shahzad Ahmad</a>
+                        </h4>
+                        <h6 class="bio">Flutter & MERN Developer</h6>
+
+                        <a class="bio-icons" href="https://m.facebook.com/profile.php?mibextid=LQQJ4d"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="bio-icons" href="https://www.instagram.com/ishahzad.ahmad?igsh=ZXpndG81dmVsaTM0"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="bio-icons" href="https://www.linkedin.com/in/shahzad-ahmad-741865225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="bio-icons" href="https://github.com/shahzad885"><i class="fa-brands fa-github style"></i></a>
+                    </div>
+
+                    <!-- phone, email, loc, birthday -->
+                    <div class="complete-info">
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="col-lg-3  col-md-3 col-sm-3 col-3">
+                                    <div class="personal-info-icon">
+                                        <a href=""><i class="fa-solid fa-mobile-screen-button"
+                                                style="color: #ff3838;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9  col-md-9 col-sm-9 col-9">
+                                    <div class="phone">
+                                        <span class="info-headings">Phone</span>
+                                        <p class="info">+92 3028985506</p>
+                                    </div>
+                                </div>
+                                <hr style="width:70%; margin-left: 42px;">
+                            </div>
+                        </div>
+
+                        <!-- email -->
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="col-lg-3  col-md-3 col-sm-3 col-3">
+                                    <div class="personal-info-icon">
+                                        <a href=""><i class="fa-regular fa-envelope" style="color: #6b994d;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9  col-md-9 col-sm-9 col-9">
+                                    <div class="phone">
+                                        <span class="info-headings">Email</span>
+                                        <p class="info">shahzadktk885@gmail.com</p>
+                                    </div>
+                                </div>
+                                <hr style="width:70%; margin-left: 42px;">
+                            </div>
+                        </div>
+
+                        <!-- location -->
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="col-lg-3  col-md-3 col-sm-3 col-3">
+                                    <div class="personal-info-icon">
+                                        <a href=""><i class="fa-solid fa-location-pin" style="color: #de7d7d;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9  col-md-9 col-sm-9 col-9">
+                                    <div class="phone">
+                                        <span class="info-headings">Location</span>
+                                        <p class="info">Islamabad, Pakistan</p>
+                                    </div>
+                                </div>
+                                <hr style="width:70%; margin-left: 42px;">
+                            </div>
+                        </div>
+
+                        <!-- Birthday -->
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="col-lg-3  col-md-3 col-sm-3 col-3">
+                                    <div class="personal-info-icon">
+                                        <a href=""><i class="fa-solid fa-calendar-days" style="color: #cb55d3;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9  col-md-9 col-sm-9 col-9">
+                                    <div class="phone">
+                                        <span class="info-headings">Birthday</span>
+                                        <p class="info">Feb 20, 2003</p>
+                                    </div>
+                                </div>
+                                <hr style="width:70%; margin-left: 42px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="shahzad.pdf"> <button type="button" class="btn btn-primary btn-lg Download-btn"> <i
+                                    class="fa-solid fa-download "></i> Download
+                                CV
+                            </button></a>
+                    </div>
+                </div>
+
+                <!-- main page -->
+                <div id="main-page" class="col-xlg-8 col-lg-8 col-md-12 col-12">
+                    <div style="padding: 3%;" class="projects-section">
+                        <h1 class="projects-section-title">My Projects</h1>
+                        <p>As a full-time Flutter developer with experience in MERN stack development, I've built various applications across different platforms. Here are some of my notable projects:</p>
+
+                        <h2 class="category-title">Flutter Mobile Applications</h2>
+                        <div class="row">
+                            <!-- Flutter Project 1 -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/htp.jpg" alt="" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">HTP - an intelligent ( AI ) psychology application
+                                        </h3>
+                                        <p class="project-description">The House-Tree-Person (HTP) Test is a psychological assessment tool used to evaluate an individual's personality, emotions, and cognitive functioning. It involves asking the person to draw a house, a tree, and a person, each representing different aspects of their inner world. The house reflects home life and relationships, the tree symbolizes growth and self-perception, and the person represents self-image and social interactions. Therapists analyze the drawings based on size, details, placement, and shading to gain insights into the individual's subconscious thoughts, emotional state, and potential psychological concerns.</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge flutter-badge">Flutter</span>
+                                            <span class="tech-badge">Dart</span>
+                                            <span class="tech-badge firebase-badge">Firebase</span>
+                                            <span class="tech-badge">RESTful API</span>
+                                            <span class="tech-badge">Openai</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://github.com/shahzad885/HTP1.0" class="project-link"><i class="fa-brands fa-google-play"></i> Play Store</a>
+                                            <a href="https://github.com/shahzad885/HTP1.0" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Flutter Project 2 -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/ruw.jpg" alt="Task Manager App" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">RWU - Cafeteria System</h3>
+                                        <p class="project-description">Elevate your cafeteria services with a sleek and efficient mobile app like the RWU Cafeteria System! Designed for seamless food ordering and management, our Flutter-built app connects users to a hassle-free dining experience on both iOS and Android. Create a user-friendly platform where customers can browse food items, manage their carts, and place orders with ease—all while enjoying a clean, modern interface. Whether you’re running a university cafeteria, corporate canteen, or food service business, our app is your gateway to streamlining operations and delighting your users. Let’s build a custom solution that enhances your cafeteria experience and keeps your customers coming back for more!</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge flutter-badge">Flutter</span>
+                                            <span class="tech-badge">Dart</span>
+                                            <span class="tech-badge firebase-badge">Firebase</span>
+                                            <span class="tech-badge">Cloud Firestore</span>
+                                            <span class="tech-badge">Riverpod</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link"><i class="fa-brands fa-app-store"></i> App Store</a>
+                                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Flutter Project 3 -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/ishop.png" alt="Fitness App" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">iShop - Stunning E-Commerce Mobile App</h3>
+                                        <p class="project-description">Ready to take your online store to the next level? Our expertly crafted e-commerce app, built with Flutter, connects your customers to a seamless shopping experience across iOS and Android. Showcase your products, highlight deals, and let our intuitive design and advanced features elevate your business. Create a stunning app with product listings, user-friendly navigation, and personalized features—all tailored to your brand. Whether you’re selling tech gadgets, fashion, or anything in between, our app is your gateway to reaching more customers and boosting sales. Let’s build the perfect platform to grow your business and delight your shoppers!</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge flutter-badge">Flutter</span>
+                                            <span class="tech-badge">Dart</span>
+                                            <span class="tech-badge">Supabase</span>
+                                            <span class="tech-badge">BLoC</span>
+                                            <span class="tech-badge">Rest apis</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/crochet.png" alt="Fitness App" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Crochet store - Stunning E-Commerce Mobile App</h3>
+                                        <p class="project-description">Ready to take your online store to the next level? Our expertly crafted e-commerce app to sale your crochets, built with Flutter, connects your customers to a seamless shopping and Showcasing experience across iOS and Android. Showcase your products, highlight deals, and let our intuitive design and advanced features elevate your business. Create a stunning app with product listings, user-friendly navigation, and personalized features—all tailored to your brand. Whether you’re selling tech gadgets, fashion, or anything in between, our app is your gateway to reaching more customers and boosting sales. Let’s build the perfect platform to grow your business and delight your shoppers!</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge flutter-badge">Flutter</span>
+                                            <span class="tech-badge">Dart</span>
+                                            <span class="tech-badge">Firebase</span>
+                                            <span class="tech-badge">Riverpod</span>
+                                            <span class="tech-badge">Rest apis</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link"><i class="fa-solid fa-globe"></i> Website</a>
+                                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                          
+                        </div>
+
+                        <h2  class="category-title"> Web Applications</h2>
+                        <div  class="row">
+                            <!-- MERN Project 1 -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/sky.png" alt="TheSkyPanel" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">TheSkyPanel - SMM Platform</h3>
+                                        <p class="project-description">A comprehensive social media marketing platform with service management, payment processing, and analytics dashboard.</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge react-badge">React.js</span>
+                                            <span class="tech-badge node-badge">Node.js</span>
+                                            <span class="tech-badge">Express.js</span>
+                                            <span class="tech-badge mongo-badge">MongoDB</span>
+                                            <span class="tech-badge">JWT Auth</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://theskypanel.com" class="project-link"><i class="fa-solid fa-globe"></i> Live site</a>
+                                            <a href="https://theskypanel.com" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- MERN Project 2 -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="project-card">
+                                    <img src="images/resileince.png" alt="" class="project-img">
+                                    <div class="project-info">
+                                        <h3 class="project-title">Reselience-soul
+                                           
+                                        </h3>
+                                        <p class="project-description">Resilience Soul is a web-based anti-depression platform designed to support users in managing their mental health. It offers core features like user registration and login, an admin dashboard for user management, mood tracking, diary entries, and articles. Users can log their moods, write personal diary entries, and access curated articles, while administrators oversee user activities and manage platform content. Built using Laravel's MVC architecture, the platform includes controllers to manage core functionalities, models to define relationships (e.g., Users, Articles, Moods, Diaries), and Blade templates for user-friendly interfaces. The database structure is well-organized with migrations for essential tables like users, articles, moods, and diaries. With its modular design, Resilience Soul is an effective, scalable, and user-centric solution to support mental health and well-being.</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-badge react-badge">Javascript</span>
+                                            <span class="tech-badge node-badge">Php</span>
+                                            <span class="tech-badge">Laravel</span>
+                                            <span class="tech-badge mongo-badge">mySQL</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://github.com/shahzad885/Reselience-soul-laravel" class="project-link"><i class="fa-solid fa-globe"></i> Live site</a>
+                                            <a href="https://github.com/shahzad885/Reselience-soul-laravel" class="project-link"><i class="fa-brands fa-github"></i> Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <div class="container">
+                        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <span class="mb-3 mb-md-0 text-muted">© 2024 All Rights Reserved.</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+    </section>
+</body>
+
+</html>
